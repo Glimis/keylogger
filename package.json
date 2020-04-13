@@ -1,0 +1,19 @@
+{
+  "name": "record",
+  "version": "1.0.0",
+  "description": "科普教程",
+  "main": "index.js",
+  "scripts": {
+    "listener": "node listener/index",
+    "koa": "node koa/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "nodejs-websocket": "^1.7.2"
+  }
+}
