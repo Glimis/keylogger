@@ -1,4 +1,4 @@
-const spawn = require('child_process').spawn
+const { spawn, fork } = require('child_process')
 const { set } = require('./model/utils')
 const path = require('path')
 
@@ -11,5 +11,6 @@ pythonProcess.stdout.on('data', (data) => {
 })
 
 // 通讯,沟通其他模块
-const socketProcess = spawn('node', [path.join(__dirname, './socket.js')])
+// const socketProcess = spawn('node', [path.join(__dirname, './socket.js')])
+const socketProcess = fork(path.join(__dirname, './socket.js'))
 global.socketProcess = socketProcess

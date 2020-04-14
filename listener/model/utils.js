@@ -21,5 +21,4 @@ exports.set = function (val) {
         _minModel = new minModel(now)
     }
     _minModel.set(val)
-
 }

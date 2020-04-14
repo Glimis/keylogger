@@ -3,6 +3,7 @@ var ipc = require("../ipc").default
 
 const conns = new Set()
 
+
 ipc.on(({ x, y }) => {
     for (var conn of conns) { // 遍历Set
         conn.send(JSON.stringify([x, y]))

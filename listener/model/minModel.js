@@ -20,7 +20,6 @@ class minModel {
         this.mapping[val] = this.mapping[val] || 0
         this.mapping[val]++
         this.count++
-
         ipc.emit({
             x: this.date,
             y: this.count
